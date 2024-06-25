@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Logic
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Borb
+  - 
   - Water
   - UI
   - 
