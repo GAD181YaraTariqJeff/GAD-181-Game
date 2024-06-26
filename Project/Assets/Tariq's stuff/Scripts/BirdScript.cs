@@ -17,12 +17,12 @@ public class BirdScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && BirdIsAlive)
+        if (Input.GetKeyDown(KeyCode.Space) && BirdIsAlive)
         {
             myRigidBody.velocity = Vector2.up * flapstrength;
         }
 
-        transform.Rotate(new Vector3(0, 0, 6));
+        transform.Rotate(new Vector3(0, 0, 1));
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
