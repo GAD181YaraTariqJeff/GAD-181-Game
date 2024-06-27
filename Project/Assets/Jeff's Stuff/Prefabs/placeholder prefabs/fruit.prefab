@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4615200269656836126}
   - component: {fileID: -6555495412819360102}
   - component: {fileID: 54069729770177619}
-  - component: {fileID: 5922473525618461521}
+  - component: {fileID: 2420539954163264683}
   m_Layer: 0
   m_Name: fruit
   m_TagString: Fruit
@@ -116,7 +116,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,8 +148,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &5922473525618461521
+  m_Constraints: 7
+--- !u!114 &2420539954163264683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1485999330416803472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a34ac45cfe238d4fae80d3ee3f61cc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 91551302bb2a2d941aa34f76b0b1052a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 1485999330416803472}
-  minimumSpawnTime: 4
-  maximumSpawnTime: 10
