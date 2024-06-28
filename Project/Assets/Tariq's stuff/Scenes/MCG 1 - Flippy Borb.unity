@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidBody: {fileID: 316895121}
-  flapstrength: 10
+  flapstrength: 12
   logic: {fileID: 0}
   BirdIsAlive: 1
 --- !u!58 &316895125
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipe: {fileID: 1673683665235122237, guid: 5cb920a6575f3cc43820e6e7dce4c80b, type: 3}
   spawnrate: 1.5
-  HightOffSet: 3
+  HightOffSet: 5
 --- !u!4 &1930666702
 Transform:
   m_ObjectHideFlags: 0
