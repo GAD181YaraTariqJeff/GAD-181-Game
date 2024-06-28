@@ -19,11 +19,11 @@ public class basketController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D) == true)
         {
-            if (tr.position.x < 10f) tr.position += new Vector3(0.5f, 0f, 0f);
+            if (tr.position.x < 8.5f) tr.position += new Vector3(0.5f, 0f, 0f);
         }
         if (Input.GetKey(KeyCode.A) == true)
         {
-            if (tr.position.x > -10f) tr.position += new Vector3(-0.5f, 0f, 0f);
+            if (tr.position.x > -8.5f) tr.position += new Vector3(-0.5f, 0f, 0f);
         }
 
     }
