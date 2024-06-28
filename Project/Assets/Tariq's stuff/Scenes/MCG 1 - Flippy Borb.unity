@@ -1251,7 +1251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipe: {fileID: 1673683665235122237, guid: 5cb920a6575f3cc43820e6e7dce4c80b, type: 3}
   spawnrate: 1.5
-  HightOffSet: 5
+  HightOffSet: 2
+  max: 4.5
+  min: 0.2
 --- !u!4 &1930666702
 Transform:
   m_ObjectHideFlags: 0
