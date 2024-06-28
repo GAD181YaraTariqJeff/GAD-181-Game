@@ -21,9 +21,9 @@ public class PopThemBalloons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                Vector2 max = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height*.9f));
+        Vector2 max = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height*.9f));
         Vector2 min = Camera.main.ScreenToWorldPoint(new Vector2(0, 0));
-Debug.Log(max);
+        Debug.Log(max);
         Debug.DrawLine(min,max);
         if (gameOver == true)
         {
