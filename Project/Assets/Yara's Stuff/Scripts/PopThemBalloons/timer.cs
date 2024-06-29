@@ -8,7 +8,7 @@ public class timer : MonoBehaviour
     [SerializeField] GameObject cube;
 	[SerializeField]public float growRate = -3f;
 	void Start () {
-	
+	 //whatever
 	}
 	
 	// Update is called once per frame
