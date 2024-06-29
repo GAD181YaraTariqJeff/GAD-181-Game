@@ -7,9 +7,6 @@ TagManager:
   - Ground
   - Balloon
   - LText
-  - Basket
-  - Fruit
-  - Spider
   layers:
   - Default
   - TransparentFX
