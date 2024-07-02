@@ -23,7 +23,7 @@ public class fruitScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Basket")
+        if (collision.gameObject.tag == "Basket1")
         {
             Debug.Log("YOU GOT A FRUIT");
             gameController.AddScore(1);

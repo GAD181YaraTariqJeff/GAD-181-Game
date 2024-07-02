@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Apple : MonoBehaviour
+public class Apple1 : MonoBehaviour
 {
     Transform tr;
+    main main;
+
 
     void Start()
     {
-        tr.GetComponent<Transform>();
+        tr = GetComponent<Transform>();
+        main = GameObject.Find("Scripts").GetComponent<main>();
     }
 
     void FixedUpdate()
@@ -24,6 +27,7 @@ public class Apple : MonoBehaviour
         if (collision.gameObject.name == "Basket")
         {
             Destroy(this.gameObject);
+            main.ScoreAdd();
         }
     }
 }
