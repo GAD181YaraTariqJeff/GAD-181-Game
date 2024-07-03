@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2287109632479738085}
   - component: {fileID: -890394440351336501}
   - component: {fileID: 7449508341538847240}
-  - component: {fileID: 6739929971667366708}
+  - component: {fileID: 7312979148055025178}
   m_Layer: 0
   m_Name: spider
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,8 +148,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &6739929971667366708
+  m_Constraints: 7
+--- !u!114 &7312979148055025178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 509838768235809132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b49b87ba0449fa45a77a5f40d2b8fdd, type: 3}
+  m_Script: {fileID: 11500000, guid: f8f2fd7022a9ef042bf928339208142e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spiderPrefab: {fileID: 509838768235809132}
-  minimumSpawnTime: 5
-  maximumSpawnTime: 10
