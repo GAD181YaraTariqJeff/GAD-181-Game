@@ -5,32 +5,35 @@ using TMPro;
 
 public class LeaveThatPhone : MonoBehaviour
 {
-    [SerializeField] TMP_Text loosingMessage;
-    public static bool gameOver = false;
+    [SerializeField] TMP_Text EndGameMessage;
+    public static int numberOfCharacters = 3;
+    public enum GameState {
+        playing,
+        win,
+        loose
+    }
+    public static GameState gameState = GameState.playing;
 
     // Start is called before the first frame update
     void Start()
     {
-      loosingMessage.text = "";  
+      EndGameMessage.text = "";  
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameOver == true) {
-            Debug.Log("Game Over Function called");
-            endGame();
+        if (gameState == GameState.loose) {
+            //Debug.Log("Game Over Function called");
+            EndGameMessage.text = "You lost!";
+            //destroyAllObjects();
+        }
+        else if(gameState == GameState.win) {
+            EndGameMessage.text = "You Won!";
+            //destroyAllObjects();
         }
     }
-    void showLoosingMessage() {
-        loosingMessage.text = "You lost!";
-        // Debug.Log("The loesing message is displayed");
-
-    }
-    public void endGame() {
-        destroyAllObjects();
-        showLoosingMessage();
-    }
+    
 
     public void destroyAllObjects() {
         GameObject[] allCharacterObjects = GameObject.FindGameObjectsWithTag("Character"); 

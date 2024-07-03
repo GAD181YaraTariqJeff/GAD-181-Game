@@ -10,6 +10,9 @@ TagManager:
   - Basket
   - Fruit
   - Spider
+  - Logic
+  - Character
+  - Train
   layers:
   - Default
   - TransparentFX
