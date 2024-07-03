@@ -1,1 +1,4 @@
 ﻿Project/ProjectSettings/SceneTemplateSettings.json
+Project/.vscode
+*.DS_Store
+*.zip

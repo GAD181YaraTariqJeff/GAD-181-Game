@@ -24,19 +24,21 @@ public class NormalBalloonScript : MonoBehaviour
     /// </summary>
     void OnMouseDown()
     {
-        Debug.Log("Game Object Clicked: " + gameObject.name);
+        //Debug.Log("Game Object Clicked: " + gameObject.name);
         Destroy(gameObject);
+        PopThemBalloons.numberOfNormalBalloons--;
+        Debug.Log("There are " + PopThemBalloons.numberOfNormalBalloons + " normal Balloons");
     }
    
-    void changeTheBalloonsLocation()
-    {
-        Vector2 max = Camera.main.ScreenToWorldPoint
-                            (new Vector2(Screen.width, Screen.height));
-        Vector2 min = Camera.main.ScreenToWorldPoint
-                            (new Vector2(0, 0));
+    // void changeTheBalloonsLocation()
+    // {
+    //     Vector2 max = Camera.main.ScreenToWorldPoint
+    //                         (new Vector2(Screen.width, Screen.height));
+    //     Vector2 min = Camera.main.ScreenToWorldPoint
+    //                         (new Vector2(0, 0));
 
-        float xPos = Random.Range(min.x, max.x);
-        float yPos = Random.Range(min.y, max.y);
-        transform.position = new Vector2(xPos, yPos);
-    }
+    //     float xPos = Random.Range(min.x, max.x);
+    //     float yPos = Random.Range(min.y, max.y);
+    //     transform.position = new Vector2(xPos, yPos);
+    // }
 }

@@ -5,16 +5,18 @@ using TMPro;
 
 public class PopThemBalloons : MonoBehaviour
 {
-    [SerializeField] TMP_Text loosingMessage;
+    [SerializeField] TMP_Text EndGameMessage;
     [SerializeField] GameObject normalBalloons;
     [SerializeField] GameObject bombBalloons;
+    [SerializeField] GameObject timer;
+    [SerializeField] public static int numberOfNormalBalloons = 4;
 
     public static GameObject balloonToRespawn;
     public static bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
-        loosingMessage.text = "";
+        EndGameMessage.text = "";
         SpawnBalloons();
     }
 
@@ -23,41 +25,53 @@ public class PopThemBalloons : MonoBehaviour
     {
         Vector2 max = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height*.9f));
         Vector2 min = Camera.main.ScreenToWorldPoint(new Vector2(0, 0));
-        Debug.Log(max);
-        Debug.DrawLine(min,max);
-        if (gameOver == true)
+        //Debug.Log(max);
+        //Debug.DrawLine(min,max);
+         if (gameOver == true)
         {
+            showLoosingMessage();
             endGame();
         }
+        else if(numberOfNormalBalloons == 0) { 
+            showLWinningMessage();
+            endGame();
+        }
+       
+        
     }
 
     public void endGame()
     {
         destroyAllBalloons();
-        showLoosingMessage();
+        destroyTimer();
+        
     }
 
     void destroyAllBalloons()
     {
-        Debug.Log("Game Object Clicked: " + gameObject.name);
+        //Debug.Log("Game Object Clicked: " + gameObject.name);
         GameObject[] allBalloonsObjects = GameObject.FindGameObjectsWithTag("Balloon");
         foreach (GameObject o in allBalloonsObjects)
         {
             Destroy(o);
         }
     }
+    void destroyTimer() {
+        Destroy(timer);
+    }
+    void showLWinningMessage() {
+        EndGameMessage.text = "You won!";
+    }
     void showLoosingMessage()
     {
-        loosingMessage.text = "You lost!";
+        EndGameMessage.text = "You lost!";
         // Debug.Log("The loesing message is displayed");
 
     }
 
     void SpawnBalloons()
     {
-
-
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < numberOfNormalBalloons; i++)
         {
             Vector2 position = FindPosition();
             while (Physics2D.OverlapCircle(transform.position, 2f))
