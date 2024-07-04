@@ -13,6 +13,7 @@ TagManager:
   - Logic
   - Character
   - Train
+  - Brick
   layers:
   - Default
   - TransparentFX
