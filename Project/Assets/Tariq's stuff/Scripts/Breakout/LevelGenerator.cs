@@ -23,9 +23,9 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-    void RestartGamebutton()
+    public void RestartGamebutton()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
