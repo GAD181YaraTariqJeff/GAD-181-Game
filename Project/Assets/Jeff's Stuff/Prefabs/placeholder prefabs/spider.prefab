@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2287109632479738085}
   - component: {fileID: -890394440351336501}
   - component: {fileID: 7449508341538847240}
-  - component: {fileID: 7312979148055025178}
+  - component: {fileID: 1962866083046659265}
   m_Layer: 0
   m_Name: spider
   m_TagString: Spider
@@ -148,8 +148,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &7312979148055025178
+  m_Constraints: 5
+--- !u!114 &1962866083046659265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,6 +158,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 509838768235809132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f2fd7022a9ef042bf928339208142e, type: 3}
+  m_Script: {fileID: 11500000, guid: 91551302bb2a2d941aa34f76b0b1052a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 1
+  speed: -10
