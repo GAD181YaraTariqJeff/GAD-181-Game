@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Jeff's Stuff/Scenes/avoidtherats.unity
     guid: a61def665f0cc8042815ea63706228af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Jeff's Stuff/MCG_Avoidtherats/MCG-2 Scenes/GameOver.unity
     guid: 9faeff987bcbdcc47bf6124bcf54b807
   m_configObjects: {}
