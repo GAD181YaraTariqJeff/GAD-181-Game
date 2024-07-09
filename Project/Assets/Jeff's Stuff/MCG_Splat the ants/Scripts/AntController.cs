@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// This script only handles the ant and nothing else
+/// </summary>
 public class AntController : MonoBehaviour
 {
     public float walkingSpeed;
