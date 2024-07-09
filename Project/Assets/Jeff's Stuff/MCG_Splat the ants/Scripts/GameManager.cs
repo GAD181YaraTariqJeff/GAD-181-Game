@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public AntController ant;
+    public AntController antController;
     public UIManager uiManager;
     private int livesNumber = 3;
     private int scoreNumber = 0;
@@ -13,20 +11,47 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        ant = GameObject.Find("Ant").GetComponent<AntController>();
-        uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
-     
+        GameObject antObject = GameObject.Find("Ant");
+        if (antObject == null)
+        {
+            Debug.LogError("Ant GameObject not found");
+        }
+        else
+        {
+            antController = antObject.GetComponent<AntController>();
+            if (antController == null)
+            {
+                Debug.LogError("AntController component not found on Ant GameObject");
+            }
+        }
 
-        uiManager.UpdateLives(livesNumber);
-        uiManager.UpdateScore(scoreNumber);
+        GameObject uiManagerObject = GameObject.Find("UIManager");
+        if (uiManagerObject == null)
+        {
+            Debug.LogError("UIManager GameObject not found");
+        }
+        else
+        {
+            uiManager = uiManagerObject.GetComponent<UIManager>();
+            if (uiManager == null)
+            {
+                Debug.LogError("UIManager component not found on UIManager GameObject");
+            }
+        }
 
-        ResetAntPosition();
+        // If everything is found, proceed with initialization
+        if (antController != null && uiManager != null)
+        {
+            
+            uiManager.UpdateLives(livesNumber);
+            uiManager.UpdateScore(scoreNumber);
+            ResetAntPosition();
+        }
     }
-
 
     void Update()
     {
-        if (ant.transform.position.y < -4.35f)
+        if (antController != null && antController.transform.position.y < -4.35f)
         {
             if (livesNumber > 0)
             {
@@ -36,21 +61,24 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                Destroy(ant.gameObject);
-                
+                Destroy(antController.gameObject);
+               
             }
         }
-
     }
+
     void ResetAntPosition()
     {
-        ant.ResetPosition(new Vector3(Random.Range(-2.54f, 2.54f), Random.Range(-4.0f, 3.8f), 0));
+        antController.ResetPosition(new Vector3(Random.Range(-2.54f, 2.54f), Random.Range(-4.0f, 3.8f), 0));
     }
+
     void OnMouseDown()
     {
         scoreNumber++;
         uiManager.UpdateScore(scoreNumber);
         ResetAntPosition();
-        ant.walkingSpeed += 0.01f;
+        antController.walkingSpeed += 0.01f;
     }
 }
+
+
