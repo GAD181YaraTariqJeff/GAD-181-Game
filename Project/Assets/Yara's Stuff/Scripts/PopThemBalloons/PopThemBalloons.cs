@@ -74,7 +74,7 @@ public class PopThemBalloons : MonoBehaviour
         for (int i = 0; i < numberOfNormalBalloons; i++)
         {
             Vector2 position = FindPosition();
-            while (Physics2D.OverlapCircle(transform.position, 2f))
+            while (Physics2D.OverlapCircle(position, 2f))
             {
                 position = FindPosition();
             }
@@ -84,7 +84,7 @@ public class PopThemBalloons : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             Vector2 position = FindPosition();
-            while (Physics2D.OverlapCircle(transform.position, 2f))
+            while (Physics2D.OverlapCircle(position, 2f))
             {
                 position = FindPosition();
             }
