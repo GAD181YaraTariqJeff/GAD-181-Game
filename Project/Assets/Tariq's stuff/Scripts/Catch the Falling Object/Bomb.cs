@@ -27,6 +27,8 @@ public class Bomb : MonoBehaviour
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
             main.GameOver = true;
+            Time.timeScale = 0f;
+            Debug.Log("Game ended!");
         }
     }
 }
