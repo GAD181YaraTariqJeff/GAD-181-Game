@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
             
             
             //x acceleration will go from its max to 0
-            acceleration = maxAcceleration *( 1 - velocityRatio);
+            acceleration = maxAcceleration * ( 1 - velocityRatio );
 
             velocity.x += acceleration * Time.deltaTime;
 
@@ -95,7 +95,8 @@ public class Player : MonoBehaviour
         transform.position = pos; 
     }
     
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         Vector2 pos = transform.position;
         Debug.Log("Collision detected");
         pos.y = groundHeight;
