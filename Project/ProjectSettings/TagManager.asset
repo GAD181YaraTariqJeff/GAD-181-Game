@@ -16,6 +16,7 @@ TagManager:
   - Brick
   - Ant
   - Cricket
+  - Bullet
   layers:
   - Default
   - TransparentFX
