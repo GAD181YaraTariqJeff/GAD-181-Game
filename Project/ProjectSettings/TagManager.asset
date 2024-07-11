@@ -15,6 +15,7 @@ TagManager:
   - Train
   - Brick
   - Ant
+  - Cricket
   layers:
   - Default
   - TransparentFX
