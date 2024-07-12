@@ -2,28 +2,28 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class timer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
-    [SerializeField] GameObject cube;
-	[SerializeField]public float shrinkRate = 0.5f;
-	void Start () {
-	 //whatever
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        float xScale = cube.transform.localScale.x;
-		float originalSize = xScale;
-        xScale -= shrinkRate * Time.deltaTime;
-		float xPos = cube.transform.position.x - (originalSize - xScale) / 2;
-		Vector2 max = Camera.main.ScreenToWorldPoint
-                            (new Vector2(Screen.width, Screen.height));
-		
-        cube.transform.position = new Vector3(xPos , max.y -1.2f, cube.transform.position.z);
-		cube.transform.localScale = new Vector3(xScale, cube.transform.localScale.y , cube.transform.localScale.z);
-		// if(cube.transform.localScale.x <= 1) {
-		// 	PopThemBalloons.gameOver = true;
-		// }
-	}
+    public float gameTime = 60f;
+    public Text gameText;
+
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        gameTime -= Time.deltaTime;
+        if (gameTime < 1)
+        {
+            gameTime = 0;
+            Time.timeScale = 0f;
+            Debug.Log("Game over!");
+        }
+        gameText.text = gameTime.ToString();
+    }
 }
