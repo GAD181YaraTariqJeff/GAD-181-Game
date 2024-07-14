@@ -17,6 +17,7 @@ TagManager:
   - Ant
   - Cricket
   - Bullet
+  - Anvil
   layers:
   - Default
   - TransparentFX
