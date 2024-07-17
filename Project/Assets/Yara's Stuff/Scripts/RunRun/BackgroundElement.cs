@@ -6,7 +6,7 @@ using UnityEngine;
 public class BackgroundElement : MonoBehaviour
 {
     public  float depth = 1;
-    Player player;
+    [SerializeField] Player player;
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
