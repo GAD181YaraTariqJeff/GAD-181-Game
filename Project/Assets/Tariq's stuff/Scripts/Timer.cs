@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class Timer : MonoBehaviour
+public class MyTimer : MonoBehaviour
 {
-    public float gameTime;
-    public Text gameText;
+    public float TotalTime;
+    public TMP_Text TimeText;
 
     void Start()
     {
@@ -17,13 +18,13 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameTime -= Time.deltaTime;
-        if (gameTime < 1)
+        TotalTime -= Time.deltaTime;
+        if (TotalTime < 1)
         {
-            gameTime = 0;
+            TotalTime = 0;
             Time.timeScale = 0f;
             Debug.Log("Game over!");
         }
-        gameText.text = gameTime.ToString();
+        TimeText.text = TimeText.ToString();
     }
 }
