@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 389186833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.35, y: -2.2036, z: 0}
+  m_LocalPosition: {x: 0.53, y: -2.2036, z: 0}
   m_LocalScale: {x: 1.8725, y: 3.3013551, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -390,6 +391,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7465aec74833214aa2c3bdef7195640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1939506771}
+  offset: {x: 5, y: 0, z: -11}
 --- !u!1 &754281947
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +529,7 @@ Transform:
   m_GameObject: {fileID: 754281947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.46, y: -3.07, z: 0}
+  m_LocalPosition: {x: -1.32, y: -3.07, z: 0}
   m_LocalScale: {x: 1.8725, y: 1.6742, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -644,7 +659,7 @@ Transform:
   m_GameObject: {fileID: 1197283445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.25, y: -1.4785, z: 0}
+  m_LocalPosition: {x: 2.34, y: -1.4785, z: 0}
   m_LocalScale: {x: 1.8725, y: 5.091075, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -948,10 +963,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939506767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb23a906c3b254ab6bc276ec0b68375a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f967d48d2bf30b43b5f4c44224fbaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 8
+  jumpPower: 10
+  rb: {fileID: 1939506768}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
