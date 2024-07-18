@@ -6,15 +6,16 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public TMP_Text scoreText;
-    public TMP_Text livesText;
+    public TMP_Text timeText; // Changed from livesText to timerText
+
 
     public void UpdateScore(int score)
     {
         scoreText.text = "Score: " + score;
     }
 
-    public void UpdateLives(int lives)
+    public void UpdateTime(int lives)
     {
-        livesText.text = "Lives Remaining: " + lives;
+        timeText.text = "Lives Remaining: " + lives;
     }
 }
