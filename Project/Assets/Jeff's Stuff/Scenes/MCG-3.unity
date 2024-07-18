@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 140972112}
   - component: {fileID: 140972113}
   m_Layer: 5
-  m_Name: 'Score_Text (TMP) '
+  m_Name: 'score_Text (TMP) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -270,9 +270,13 @@ PrefabInstance:
       value: Ant
       objectReference: {fileID: 0}
     - target: {fileID: 6359403134979819246, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 635491765}
+    - target: {fileID: 6359403134979819246, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
       propertyPath: uiManager
       value: 
-      objectReference: {fileID: 1207990813}
+      objectReference: {fileID: 0}
     - target: {fileID: 6359403134979819246, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
       propertyPath: antController
       value: 
@@ -324,9 +328,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5526353337895449525, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1207990814}
-    - targetCorrespondingSourceObject: {fileID: 5526353337895449525, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1207990813}
   m_SourcePrefab: {fileID: 100100000, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
 --- !u!1 &635491764
 GameObject:
@@ -340,7 +341,7 @@ GameObject:
   - component: {fileID: 635491766}
   - component: {fileID: 635491765}
   m_Layer: 5
-  m_Name: Lives_Text (TMP)
+  m_Name: timer_Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -570,20 +571,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5526353337895449525, guid: d37667162a5e95847b8ae6617c8932ca, type: 3}
   m_PrefabInstance: {fileID: 603127515}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1207990813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207990808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921f4fbb0e541b144827549486d8cf52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  livesText: {fileID: 0}
 --- !u!114 &1207990814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5d81e41dc4a2a4f8237ea1a2af6bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 0
+  walkingSpeed: 5
 --- !u!1 &1571027371
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +798,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2575213156349979794, guid: f13a042832161a340b4f9772c0b6952d, type: 3}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 635491765}
+    - target: {fileID: 2575213156349979794, guid: f13a042832161a340b4f9772c0b6952d, type: 3}
       propertyPath: livesText
       value: 
       objectReference: {fileID: 635491765}
@@ -875,6 +866,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1019714697951825217, guid: b25f5dbbe2ea8a1418143d650e51700e, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 635491765}
     - target: {fileID: 1019714697951825217, guid: b25f5dbbe2ea8a1418143d650e51700e, type: 3}
       propertyPath: uiManager
       value: 
