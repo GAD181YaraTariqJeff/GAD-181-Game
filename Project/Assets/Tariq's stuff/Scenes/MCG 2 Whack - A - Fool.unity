@@ -531,6 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230672548}
+  - component: {fileID: 1230672549}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -559,6 +560,28 @@ Transform:
   - {fileID: 216740640}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230672549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230672547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f49f4b6b696944fb7466f527421bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  molePrefab: {fileID: 3139201928039305651, guid: 0d47d67a133ebf244b22c9f7cd4697be, type: 3}
+  spawnpoints:
+  - {fileID: 1893229440}
+  - {fileID: 1148235190}
+  - {fileID: 299241301}
+  - {fileID: 1432980065}
+  - {fileID: 1967663776}
+  - {fileID: 216740640}
+  gameTime: 9
+  gameText: {fileID: 782060743}
 --- !u!1 &1432980063
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +678,7 @@ GameObject:
   - component: {fileID: 1480525786}
   - component: {fileID: 1480525785}
   - component: {fileID: 1480525784}
+  - component: {fileID: 1480525788}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -746,6 +770,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1480525788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480525783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f58b999fff5f3341bf0e3ad182a0da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1610854066}
+  score: 0
 --- !u!1 &1561588746
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,8 +796,6 @@ GameObject:
   - component: {fileID: 1561588748}
   - component: {fileID: 1561588747}
   - component: {fileID: 1561588751}
-  - component: {fileID: 1561588750}
-  - component: {fileID: 1561588752}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -841,28 +877,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1561588750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561588746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2f49f4b6b696944fb7466f527421bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  molePrefab: {fileID: 3139201928039305651, guid: 0d47d67a133ebf244b22c9f7cd4697be, type: 3}
-  spawnpoints:
-  - {fileID: 1893229440}
-  - {fileID: 1148235190}
-  - {fileID: 299241301}
-  - {fileID: 1432980065}
-  - {fileID: 1967663776}
-  - {fileID: 216740640}
-  gameTime: 9
-  gameText: {fileID: 782060743}
 --- !u!114 &1561588751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,20 +921,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &1561588752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561588746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f58b999fff5f3341bf0e3ad182a0da6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1610854066}
-  score: 0
 --- !u!1 &1610854064
 GameObject:
   m_ObjectHideFlags: 0
