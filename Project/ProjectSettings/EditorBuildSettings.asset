@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Main Game/Scenes/ArcadeCore.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
     path: Assets/Jeff's Stuff/Scenes/MCG-2.unity
     guid: a61def665f0cc8042815ea63706228af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Jeff's Stuff/MCG_Avoidtherats/MCG-2 Scenes/GameOver.unity
     guid: 9faeff987bcbdcc47bf6124bcf54b807
   m_configObjects: {}
