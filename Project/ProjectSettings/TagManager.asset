@@ -23,6 +23,7 @@ TagManager:
   - Ball
   - Paddle
   - Cloud
+  - Box
   layers:
   - Default
   - TransparentFX
