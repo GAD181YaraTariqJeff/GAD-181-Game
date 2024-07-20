@@ -1,0 +1,175 @@
+* 089890d (HEAD -> main, origin/main, origin/HEAD) dont worry, i only deleted my empty MCG scenes (MCG 8, 9, 10)
+* 78866c3 save
+* fa63fa5 FIxed the flippy borb timer
+* 73124d2 Revert "whatever"
+*   52c5866 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| * 3b07e34 Completion of 7th microgame
+| * fde905b Rename the folder
+| * 443cc5a Folders for the 7th micro game
+| * cf296dc MCG-7
+| * e53da19 added obstacles in guide the bear
+| * 419279c Minor tweak on splat the ant
+| * 8d3fd8f Prefab
+| * 321c956 Avoid the rats tweaks
+| * 958cd54 Simple Scripts for big game
+| * 876c8b5 Placeholders for the big game
+| * 559cbd2 I don't know what happened here
+* | 311a188 i adjusted the positioning in the layers
+|/  
+*   442edf0 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| * 40eddef Rename
+| * e1f7696 Folders
+* | 76625ae whatever
+* | 742842e Commited  everything thus far
+* | 9dfa24e Added scripts for FreeFall MCG
+* | 7c72102 Added the scripts of BreakTheBricks MCG
+* | c81df90 Added the scenes of the Games
+* | bcc0d47 Added the art for my MCGs
+* | 6861ba0 Added RunRun MCG
+* | 2e46ebd Added the freefall MCG
+* | 0a2b881 Added the Break the brick MCG
+|/  
+* 27561ca Tweaks
+* a824d53 prefabs
+* 8bb29fe Finalized Guide the bear
+* a622f56 added an MCG 7 "ROCKY MINES" scene
+* 979ecf3 added an "ROCKY MINES" script folder.
+* 1288731 removed and changed some stuff
+* 14867a7 Rail asset for MCG - 7 "ROCKY MINES"
+* cc952c6 character for MCG - 7 "ROCKY MINES"
+* b45b791 background for MCG - 7 "ROCKY MINES"
+*   f5f9bbf Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| * 6f226f6 Camera Background
+| * 83e1d99 Added a new scene and art folders
+| * 0fe664a Added prefabs and Fixed the errors for  Blastz
+| * 5f0c31a Deleted yara's timer script
+* | 170f8bb remove the prototype and added an rock asset
+|/  
+* f658e77 added a new prototype for MCG 7
+* 647dd84 added scripts for my MCG 7 (Not complete)
+* d31cd85 edited my scenes, once again.
+* 2955d89 added a new folder for my MCG 7 (Microgame 7)
+*   2f15676 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| * 171a634 Finalized Blastz
+| * 593de07 Player function
+| * d0a097e Folder
+| * fb28e92 Finalized Frog hopper and made a new scene for my 5th microgame
+| * 695ff1d Completed 4th MCG frog hopper
+* | a769d4d added forth microgame CleanIt
+|/  
+* b221839 bounce work
+* 2e1b5db movement script
+* e57b6af Physics Material
+* 9851ebd Folders
+* 2090da7 renamed and reorganized
+*   dbe9f52 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| *   a59d52b Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+| |\  
+| * | 518d061 Returned the place holders and trying to fix the timer in pop the balloon
+* | | 8d8bb8b added timers to my previous games.
+* | | 0b587d8 time logic
+* | | edeb3b3 added a timer script that stops time once the time is 0
+* | | 194b847 MCG 2 - Scripts
+* | | 5a91b3c moved my scenes and changed some names
+| |/  
+|/|   
+* | 822da4e prefabs and fixed the compile errors
+* | ef80376 Added more scripts
+* | 23bb192 Added scripts
+* | a43ee25 added scene for microgame 3
+* | 7e7af14 reorganized folders
+* | d77635e another important file (?)
+* | 3cc4da4 addes scripts for my memory mess MCG6
+* | b353520 not sure what is this but, it seems important
+* | 580b59b added art assets for my memory mess MCG 6
+* | 329195c New scenes for my microgames
+|/  
+* 469c1e6 idk what i did here, i literary dont remember but i propably organized things and moved things
+* 3abcc50 added the scripts for "Ping-Pong" game.
+* 9a44db5 Added "Ping-Pong" game art and assets.
+* 18ff2ca Fixed Fruit bonanza
+* b89c0a2 added a patrolling enemy code script
+* 56725f4 Fixed the lose scene
+* 6f47161 re arranged the scene
+* d435a41 Fixed minor issues for MCG2
+* c642dc2 Scene set up
+* 10e7bd7 added a new tag called "brick"
+* 8466203 scripts for breakout game
+* 207ddc4 added a "breakout" scene (4th microgame)
+* 37ca7cb removed the assets folder and its content, replaced by "Art" folder
+* 110c443 created a diffrent folder called "Art" instead of "Assets"
+* 3eab479 added my 4th microgame onto the project
+* 54be5f7 Added microgame 2
+* 6aca44c Micro game 2
+*   b1646e4 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| *   defc190 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+| |\  
+| * | d33212a yara stuff
+| * | 965d8e6 This commit contain all the stuff of the three team members
+| * | 303a0a6 this is my The commit after that some of us got missing our content
+* | | 71caf23 removed extra yara's stuff.
+* | |   c89ee8a Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\ \ \  
+| | |/  
+| |/|   
+| * | f281a5d Revert "this is my first commit in the project"
+| * | 397ab34 this is my first commit in the project
+| |/  
+| *   31133f4 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+| |\  
+| * | f8acf75 yara baloons game
+* | | 54ff43c changed the position
+* | | 8bfdc67 continued developing my 3rd microgame & yara's stuff onto the project
+* | | 490283c Added an catch the falling object game
+| |/  
+|/|   
+* | 287baa2 Saved flippy borb game
+* |   4ea548f Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\ \  
+| * | 5f11ef5 Adjusted the UI and the Aspect Ratio
+| * | 35269bc Basket movement
+| * | 35b9f96 Overhauled the initial game
+| * | 8ea3e51 Changed the rotation speed
+| * | 5897f23 Added a function
+* | | e582493 floppy bird
+* | | 5b66dff Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\| | 
+| * | a12865e Added tags to the prefabs for fruit bonanza
+* | | 9054854 Merge branch 'main' of https://github.com/GAD181YaraTariqJeff/GAD-181-Game
+|\| | 
+| * | e35da83 Played the flippy borb
+| * |   8daee46 Merge branch 'main' of github.com:GAD181YaraTariqJeff/GAD-181-Game
+| |\ \  
+| | |/  
+| |/|   
+| * | 43d71ad Added and fixed an issue with spawning prefabs
+| * | 8a1954f Added more scripts
+| * | cd337f6 Created folders for my micro games
+| * | d6cbacd Created a scene
+| * | 7f19c3b Folder for microgames
+* | | 5074c95 Commiting test
+* | | 8ae6503 Revert "Added literary all my assets, scripts, and scenes."
+| |/  
+|/|   
+* | 713d6eb Added literary all my assets, scripts, and scenes.
+|/  
+* 7cde83e Prototyping
+* 8336554 created specific folders
+* 49f189c Reapply "Deleted the test file"
+* ae2e3a5 Revert "Deleted the test file"
+* 714896f Deleted the test file
+* e05da28 initialized unity project
+* 362ccf9 added unity gitignore
+* 762583e Changed some text
+*   1344c45 Merge branch 'main' of github.com:GAD181YaraTariqJeff/GAD-181-Game
+|\  
+| * 25c0ba5 removed axtra line
+* | 9dc5a78 Random Words
+|/  
+* d993252 GAD 181 test file
