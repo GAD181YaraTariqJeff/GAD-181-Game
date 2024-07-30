@@ -1280,6 +1280,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3990593670601029299, guid: 47930adee087fd94e943324e472733dc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6406657269779890518, guid: 47930adee087fd94e943324e472733dc, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1735,6 +1739,18 @@ PrefabInstance:
     - target: {fileID: 2806656372474441749, guid: f4265e7aac2e0044c9abcedf00aabebd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744227463820609849, guid: f4265e7aac2e0044c9abcedf00aabebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.28866667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744227463820609849, guid: f4265e7aac2e0044c9abcedf00aabebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744227463820609849, guid: f4265e7aac2e0044c9abcedf00aabebd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8449473734912035061, guid: f4265e7aac2e0044c9abcedf00aabebd, type: 3}
       propertyPath: m_Name
