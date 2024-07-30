@@ -8,10 +8,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main Game/Scenes/ArcadeCore.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
+  - enabled: 1
     path: Assets/Jeff's Stuff/Scenes/MCG-2.unity
     guid: a61def665f0cc8042815ea63706228af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Jeff's Stuff/MCG_Avoidtherats/MCG-2 Scenes/GameOver.unity
     guid: 9faeff987bcbdcc47bf6124bcf54b807
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-1.unity
+    guid: a0e7670cffe968243ac1cb20a47dc171
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-3.unity
+    guid: 5e8abb0ff42c2bc439d91474194542b8
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-4.unity
+    guid: 7809aa21796468e46a684e084e395431
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-5.unity
+    guid: 3dbc995df6a2f724fafcc51f4fbded6e
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-7.unity
+    guid: f1cdb0dbb7b5e2b45badc621e9da1f4c
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 1 - Flippy Borb.unity
+    guid: eb2c6320e2467fe45b320a80a2ea834f
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 2 Whack - A - Fool.unity
+    guid: 59cd76245f3bf484980d3c8ffbc6ac6d
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 3 - Catch the Falling Apple.unity
+    guid: ede7f37ea2781e749b2f603e19c7d32d
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 4 - Breakout.unity
+    guid: a1cf73a7f15645c4bb703be04df733f3
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 5 - Ping-Pong.unity
+    guid: 39a2e7882ab1ed742a929a66becf4fe5
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 6 - Memory Mess!.unity
+    guid: 4627cbbbbf46b794fa57dd1c2926fe4f
+  - enabled: 1
+    path: Assets/Tariq's stuff/Scenes/MCG 7 - Rocky Mines.unity
+    guid: 6c8f47b0414450f41932a9135e109d49
   m_configObjects: {}
