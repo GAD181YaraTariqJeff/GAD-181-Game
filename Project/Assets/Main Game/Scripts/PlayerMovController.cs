@@ -15,7 +15,7 @@ public class PlayerMovController : MonoBehaviour
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
         // Jump if space is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
