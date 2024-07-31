@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tariq's stuff/Scenes/MCG 7 - Rocky Mines.unity
     guid: 6c8f47b0414450f41932a9135e109d49
+  - enabled: 1
+    path: Assets/Jeff's Stuff/Scenes/MCG-6.unity
+    guid: 7d6c816d96656cd4ea2922c4c86706e9
   m_configObjects: {}
