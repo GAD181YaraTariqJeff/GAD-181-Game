@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement2D : MonoBehaviour
+public class MainPlayerScript : MonoBehaviour
 {
     private float horizontal;
     public float speed = 8f;
@@ -51,5 +52,20 @@ public class PlayerMovement2D : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    // This method will be called when the player collides with a hazard
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Hazard"))
+        {
+            Respawn();
+        }
+    }
+
+    // This method will reset the level when called
+    private void Respawn()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
