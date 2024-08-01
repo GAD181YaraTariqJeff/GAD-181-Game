@@ -24,6 +24,7 @@ TagManager:
   - Paddle
   - Cloud
   - Box
+  - Hazard
   layers:
   - Default
   - TransparentFX
