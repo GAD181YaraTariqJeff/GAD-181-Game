@@ -53,19 +53,4 @@ public class MainPlayerScript : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-
-    // This method will be called when the player collides with a hazard
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Hazard"))
-        {
-            Respawn();
-        }
-    }
-
-    // This method will reset the level when called
-    private void Respawn()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
 }
