@@ -8,4 +8,5 @@ public class PlayerData : ScriptableObject
 {
     public Vector3 playerPosition;
     public string currentScene;
+    public int health = 3;
 }

@@ -348,10 +348,8 @@ MonoBehaviour:
   - MCG-3
   - MCG-4
   - MCG-5
-  - MCG-6
   - MCG-7
   - MCG 1 - Flippy Borb
-  - MCG 2 Whack - A - Fool
   - MCG 3 - Catch the Falling Apple
   - MCG 4 - Breakout
   - MCG 5 - Ping-Pong
@@ -571,6 +569,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -744,6 +743,102 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!82 &519420035
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b240d5bb078f05e4ebb5b8968b3d8b36, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.54
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &550554189
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,10 +907,8 @@ MonoBehaviour:
   - MCG-3
   - MCG-4
   - MCG-5
-  - MCG-6
   - MCG-7
   - MCG 1 - Flippy Borb
-  - MCG 2 Whack - A - Fool
   - MCG 3 - Catch the Falling Apple
   - MCG 4 - Breakout
   - MCG 5 - Ping-Pong
@@ -970,10 +1063,8 @@ MonoBehaviour:
   - MCG-3
   - MCG-4
   - MCG-5
-  - MCG-6
   - MCG-7
   - MCG 1 - Flippy Borb
-  - MCG 2 Whack - A - Fool
   - MCG 3 - Catch the Falling Apple
   - MCG 4 - Breakout
   - MCG 5 - Ping-Pong
@@ -30918,10 +31009,8 @@ MonoBehaviour:
   - MCG-3
   - MCG-4
   - MCG-5
-  - MCG-6
   - MCG-7
   - MCG 1 - Flippy Borb
-  - MCG 2 Whack - A - Fool
   - MCG 3 - Catch the Falling Apple
   - MCG 4 - Breakout
   - MCG 5 - Ping-Pong
@@ -31728,6 +31817,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade_Machine_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[5]
+      value: MCG-7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[6]
+      value: MCG 1 - Flippy Borb
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[7]
+      value: MCG 3 - Catch the Falling Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[8]
+      value: MCG 4 - Breakout
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[9]
+      value: MCG 5 - Ping-Pong
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[10]
+      value: MCG 6 - Memory Mess!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[11]
+      value: MCG 7 - Rocky Mines
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[12]
+      value: MCG-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
+      propertyPath: microgameScenes.Array.data[13]
+      value: MCG 2 Whack - A - Fool
+      objectReference: {fileID: 0}
     - target: {fileID: 8357956585293164189, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.9198
@@ -31824,6 +31953,46 @@ PrefabInstance:
     - target: {fileID: 6197841374772865921, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: m_Name
       value: Arcade_Machine_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[5]
+      value: MCG-7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[6]
+      value: MCG 1 - Flippy Borb
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[7]
+      value: MCG 3 - Catch the Falling Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[8]
+      value: MCG 4 - Breakout
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[9]
+      value: MCG 5 - Ping-Pong
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[10]
+      value: MCG 6 - Memory Mess!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[11]
+      value: MCG 7 - Rocky Mines
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[12]
+      value: MCG-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
+      propertyPath: microgameScenes.Array.data[13]
+      value: MCG 2 Whack - A - Fool
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31957,11 +32126,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 278389828854603769, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.37
+      value: 3.14
       objectReference: {fileID: 0}
     - target: {fileID: 278389828854603769, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.13
+      value: -3.05
       objectReference: {fileID: 0}
     - target: {fileID: 278389828854603769, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31998,6 +32167,54 @@ PrefabInstance:
     - target: {fileID: 2511410062197743206, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: m_Name
       value: Arcade_Machine_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[5]
+      value: MCG-7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[6]
+      value: MCG 1 - Flippy Borb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[7]
+      value: MCG 3 - Catch the Falling Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[8]
+      value: MCG 4 - Breakout
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[9]
+      value: MCG 5 - Ping-Pong
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[10]
+      value: MCG 6 - Memory Mess!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[11]
+      value: MCG 7 - Rocky Mines
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[12]
+      value: MCG-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[13]
+      value: MCG 2 Whack - A - Fool
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[14]
+      value: MCG 7 - Rocky Mines
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: microgameScenes.Array.data[15]
+      value: MCG 7 - Rocky Mines
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
