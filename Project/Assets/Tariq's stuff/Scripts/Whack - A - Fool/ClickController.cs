@@ -8,12 +8,12 @@ public class ClickController : MonoBehaviour
     public Text scoreText;
     public int score;
 
-    private SpawningMoles ms;
+    public SpawningMoles ms;
 
     void Start()
     {
         score = 0;
-        ms = GetComponent<SpawningMoles>();
+        //ms = GetComponent<SpawningMoles>();
     
     }
 

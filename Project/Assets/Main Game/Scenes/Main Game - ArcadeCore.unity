@@ -386,6 +386,7 @@ MonoBehaviour:
   - MCG 5 - Ping-Pong
   - MCG 6 - Memory Mess!
   - MCG 7 - Rocky Mines
+  - MCG 2 Whack - A - Fool
 --- !u!61 &338294405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1138,6 +1139,7 @@ MonoBehaviour:
   - MCG 5 - Ping-Pong
   - MCG 6 - Memory Mess!
   - MCG 7 - Rocky Mines
+  - MCG 2 Whack - A - Fool
 --- !u!61 &581542132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1294,6 +1296,7 @@ MonoBehaviour:
   - MCG 5 - Ping-Pong
   - MCG 6 - Memory Mess!
   - MCG 7 - Rocky Mines
+  - MCG 2 Whack - A - Fool
 --- !u!61 &965639114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31603,6 +31606,7 @@ MonoBehaviour:
   - MCG 5 - Ping-Pong
   - MCG 6 - Memory Mess!
   - MCG 7 - Rocky Mines
+  - MCG 2 Whack - A - Fool
 --- !u!61 &1720249992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32657,7 +32661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
       propertyPath: microgameScenes.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
       propertyPath: microgameScenes.Array.data[5]
@@ -32689,7 +32693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
       propertyPath: microgameScenes.Array.data[12]
-      value: MCG-6
+      value: MCG 2 Whack - A - Fool
       objectReference: {fileID: 0}
     - target: {fileID: 3888141442230200832, guid: 0e184f738b2d1ce4ba4a03684cf9e120, type: 3}
       propertyPath: microgameScenes.Array.data[13]
@@ -32794,7 +32798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: microgameScenes.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: microgameScenes.Array.data[5]
@@ -32826,7 +32830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: microgameScenes.Array.data[12]
-      value: MCG-6
+      value: MCG 2 Whack - A - Fool
       objectReference: {fileID: 0}
     - target: {fileID: 8631398359356425258, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: microgameScenes.Array.data[13]
@@ -33014,7 +33018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: microgameScenes.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: microgameScenes.Array.data[5]
@@ -33046,7 +33050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: microgameScenes.Array.data[12]
-      value: MCG-6
+      value: MCG 2 Whack - A - Fool
       objectReference: {fileID: 0}
     - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: microgameScenes.Array.data[13]
