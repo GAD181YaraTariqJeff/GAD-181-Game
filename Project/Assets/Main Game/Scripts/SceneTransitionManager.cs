@@ -8,7 +8,7 @@ public class SceneTransitionManager : MonoBehaviour
     public PlayerData playerData;
     private static SceneTransitionManager instance;
 
-    void Awake()
+    void Awake() //added a singleton to ensure there is only on instance on SceneTransitionManager
     {
         if (instance == null)
         {
