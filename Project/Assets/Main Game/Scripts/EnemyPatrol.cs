@@ -8,7 +8,6 @@ public class EnemyPatrol : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public float speed = 2.0f;
-
     private Transform target;
 
     void Start()
@@ -35,11 +34,28 @@ public class EnemyPatrol : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public MainPlayerScript playerScript;
+    // This method will be called when the player collides with a hazard
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Respawn();
+        }
+    }
+
+    // This method will reset the level when called 
+    private void Respawn()
+    {
+        playerScript._health -= 1;
+        playerScript.UpdateHealthText();
+        playerScript.ResetPosition();  // Reset the player's position
+
+        // Reload the scene only if health is 0
+        if (playerScript._health <= 0)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
     }
 }

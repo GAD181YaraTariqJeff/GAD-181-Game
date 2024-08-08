@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,13 +10,25 @@ public class MainPlayerScript : MonoBehaviour
     public float speed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
+    public int _health = 3;
+    public TextMeshProUGUI _healthText;
+    private Vector3 _startPosition; // Store the starting position
+
 
     private Collider2D platformCollider;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    void Start()
+    {
+        // Ensure the health text is updated at the start of the game
+        UpdateHealthText();
+        // Set the starting position to specific coordinates
+        _startPosition = new Vector3(-10.47f, -3.16f, transform.position.z);
+        transform.position = _startPosition; // Ensure the player starts at this position
 
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -52,5 +65,13 @@ public class MainPlayerScript : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+    public void UpdateHealthText()
+    {
+        _healthText.text = "Health: " + _health.ToString();
+    }
+    public void ResetPosition()
+    {
+        transform.position = _startPosition; // Reset the player to the starting position
     }
 }
