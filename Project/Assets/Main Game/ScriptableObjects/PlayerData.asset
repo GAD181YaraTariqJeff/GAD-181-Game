@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c3be0a116f28645948285ebfccadf7, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  playerPosition: {x: 0, y: 0, z: 0}
-  currentScene: ArcadeCore
+  playerPosition: {x: 33.15538, y: -2.3686593, z: 0}
+  currentScene: Main Game - ArcadeCore
+  startingPosition: {x: -10.5, y: -3.05, z: 0}
