@@ -9,7 +9,7 @@ public class GameStart : MonoBehaviour
     {
         if (showInstruction != null)
         {
-            showInstruction.ShowInstructionText("Use A or D to move and SPACE to jump, touch the arcade machines for a suprise and to revert press P");
+            showInstruction.ShowInstructionText("Use A or D to move and SPACE to jump, go near the arcade machines for a suprise and press E. Also if something bad happens just press P");
         }
     }
 }
