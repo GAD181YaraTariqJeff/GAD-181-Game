@@ -24748,7 +24748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4086908055372105113, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.5
+      value: 19.18
       objectReference: {fileID: 0}
     - target: {fileID: 4086908055372105113, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28979,7 +28979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4086908055372105113, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.29
+      value: 30.22
       objectReference: {fileID: 0}
     - target: {fileID: 4086908055372105113, guid: 9949b1a14591ad84087eb4e7cc7b0dad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -127528,6 +127528,22 @@ PrefabInstance:
     - target: {fileID: 2511410062197743206, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: m_Name
       value: Arcade_Machine_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341485834557051322, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9351228
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341485834557051322, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: m_Size.y
+      value: 2.123096
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341485834557051322, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.11132413
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341485834557051322, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.037436485
       objectReference: {fileID: 0}
     - target: {fileID: 7147724693101209701, guid: 76933a67727a61847a285a59b57e7af7, type: 3}
       propertyPath: playerData
