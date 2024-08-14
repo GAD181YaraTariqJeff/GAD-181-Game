@@ -13,11 +13,9 @@ public class MainPlayerScript : MonoBehaviour
     public int _health = 3;
     public TextMeshProUGUI _healthText;
     private Vector3 _startPosition; // Store the starting position
-
-    public PlayerData playerData; // Reference to your PlayerData Scriptable Object
-
+    public PlayerData playerData; // Reference to the PlayerData Scriptable Object
+    public AudioSource jumpAudioSource; // Reference to the AudioSource component
     private Collider2D platformCollider;
-
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -46,11 +44,18 @@ public class MainPlayerScript : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            // Play the jump SFX
+            if (jumpAudioSource != null)
+            {
+                jumpAudioSource.Play();
+            }
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            // Play the jump SFX
+         
         }
 
         // Save the player's position when 'S' key is pressed

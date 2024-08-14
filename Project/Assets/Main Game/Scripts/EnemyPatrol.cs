@@ -9,6 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     public Transform pointB;
     public float speed = 2.0f;
     private Transform target;
+    public PlayerData playerData;
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         playerScript._health -= 1;
         playerScript.UpdateHealthText();
-        playerScript.ResetPosition();  // Reset the player's position
+        playerScript.transform.position = playerData.playerPosition;  // Reset the player's position to the last checkpoint
 
         // Reload the scene only if health is 0
         if (playerScript._health <= 0)
