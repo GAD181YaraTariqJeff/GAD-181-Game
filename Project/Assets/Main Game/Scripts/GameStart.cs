@@ -9,7 +9,7 @@ public class GameStart : MonoBehaviour
     {
         if (showInstruction != null)
         {
-            showInstruction.ShowInstructionText("Use A or D to move and SPACE to jump, go near the arcade machines for a suprise and press E. Also if something bad happens just press P");
+            showInstruction.ShowInstructionText("Press Arrow Keys LEFT & RIGHT to 'Move'. Press SPACE to 'Jump' (Long Press to jump higher). Press E to 'Interact' with the arcade machines. Press P to 'Exit' the arcade machines. Press S to save a checkpoint (unlimited)");
         }
     }
 }
