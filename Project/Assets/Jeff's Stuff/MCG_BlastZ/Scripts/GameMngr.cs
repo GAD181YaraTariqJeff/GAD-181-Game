@@ -8,7 +8,7 @@ public class GameMngr : MonoBehaviour
     public int totalTargets = 5;
     public float timeLimit = 10f; // Time limit in seconds
     public TextMeshProUGUI timerText; // TMP component to display the timer
-    public TextMeshProUGUI targetCountText; // TMP component to display the remaining target count
+   // public TextMeshProUGUI targetCountText; // TMP component to display the remaining target count
 
     private int targetsShot = 0;
     private int targetsRemaining;
@@ -23,7 +23,7 @@ public class GameMngr : MonoBehaviour
         // Spawn targets
         SpawnTargets();
         // Update target count display
-        UpdateTargetCountDisplay();
+       // UpdateTargetCountDisplay();
     }
 
     void Update()
@@ -50,7 +50,7 @@ public class GameMngr : MonoBehaviour
         targetsRemaining--;
 
         // Update the target count display
-        UpdateTargetCountDisplay();
+        //UpdateTargetCountDisplay();
 
         // Check if all targets have been shot
         if (targetsRemaining <= 0)
@@ -89,9 +89,9 @@ public class GameMngr : MonoBehaviour
         timerText.text = $"Time: {timer:F1}"; // F1 formats the timer to 1 decimal place
     }
 
-    void UpdateTargetCountDisplay()
+   /* void UpdateTargetCountDisplay()
     {
         // Update the target count text with the number of remaining targets
         targetCountText.text = $"Targets Left: {targetsRemaining}";
-    }
+    }*/
 }
