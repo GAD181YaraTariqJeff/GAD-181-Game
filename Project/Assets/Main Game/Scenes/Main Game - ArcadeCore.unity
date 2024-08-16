@@ -124136,7 +124136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   jumpingPower: 18
-  healthText: {fileID: 0}
+  healthText: {fileID: 1542918613}
   _microgameScoreText: {fileID: 1828533544}
   playerData: {fileID: 11400000, guid: 9f9c94c037eed6142afc59776e13cbbd, type: 2}
   jumpAudioSource: {fileID: 1939506775}
