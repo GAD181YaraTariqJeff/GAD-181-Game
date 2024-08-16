@@ -7,6 +7,7 @@ public class MicrogameTrigger : MonoBehaviour
 {
     public string[] microgameScenes;
     private SceneTransitionManager sceneTransitionManager;
+    public MainPlayerScript mainPlayerScript;//Reference to the main player script
     public PlayerData playerData;  // Reference to the PlayerData ScriptableObject
     private bool isPlayerInRange = false;
 
@@ -20,6 +21,8 @@ public class MicrogameTrigger : MonoBehaviour
         // Check if the player is in range and presses the "E" key
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            //Update the score counter
+            mainPlayerScript.IncrementMicrogameScore();
             // Save the player's position at the arcade machine's position
             playerData.playerPosition = transform.position;
 
@@ -40,14 +43,17 @@ public class MicrogameTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+        
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
+            
         }
     }
 }

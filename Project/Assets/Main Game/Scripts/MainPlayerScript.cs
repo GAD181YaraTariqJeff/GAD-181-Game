@@ -12,6 +12,7 @@ public class MainPlayerScript : MonoBehaviour
     private bool isFacingRight = true;
     public int _health = 3;
     public TextMeshProUGUI _healthText;
+    public TextMeshProUGUI _microgameScoreText; // Reference to the UI Text element
     private Vector3 _startPosition; // Store the starting position
     public PlayerData playerData; // Reference to the PlayerData Scriptable Object
     public AudioSource jumpAudioSource; // Reference to the AudioSource component
@@ -22,8 +23,10 @@ public class MainPlayerScript : MonoBehaviour
 
     void Start()
     {
+        //update score UI
+        UpdateScoreText();
         // Ensure the health text is updated at the start of the game
-    UpdateHealthText();
+        UpdateHealthText();
 
         // Load player position if available
         if (playerData != null && playerData.playerPosition != Vector3.zero)
@@ -106,5 +109,15 @@ public class MainPlayerScript : MonoBehaviour
             playerData.SavePosition(transform);
             Debug.Log("Player position saved: " + playerData.playerPosition);
         }
+    }
+    // Method to increase the score and update the UI
+    public void IncrementMicrogameScore()
+    {
+        playerData._microgameScore += 1;
+        UpdateScoreText();
+    }
+    private void UpdateScoreText()
+    {
+        _microgameScoreText.text = "Games Played: " + playerData._microgameScore.ToString();
     }
 }

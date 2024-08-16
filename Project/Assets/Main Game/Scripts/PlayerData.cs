@@ -9,8 +9,10 @@ public class PlayerData : ScriptableObject
     public Vector3 playerPosition;
     public string currentScene;
     public Vector3 startingPosition;
+    public int _microgameScore; 
     private void OnEnable() 
     {
+        _microgameScore = 0; // Initialize score
         // Initialize the starting position if not already set
         if (startingPosition == Vector3.zero)
         {
