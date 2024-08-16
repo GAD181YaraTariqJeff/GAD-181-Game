@@ -138,7 +138,8 @@ namespace Bundos.MovingPlatforms
 
         private bool IsSelected()
         {
-            return UnityEditor.Selection.activeGameObject == transform.gameObject;
+            return false;
+           // return UnityEditor.Selection.activeGameObject == transform.gameObject;
         }
 
         int mod(int x, int m)
