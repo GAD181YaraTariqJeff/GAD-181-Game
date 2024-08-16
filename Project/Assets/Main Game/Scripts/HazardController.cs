@@ -30,6 +30,11 @@ public class HazardController : MonoBehaviour
         if (playerData.playerHealth <= 0) // Use playerHealth instead
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+            // Reset health and score
+            playerData.playerHealth = 3;
+            playerData._microgameScore = 0;
+            
         }
     }
 }
