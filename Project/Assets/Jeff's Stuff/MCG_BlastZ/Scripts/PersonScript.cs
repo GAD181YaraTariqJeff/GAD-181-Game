@@ -28,9 +28,11 @@ public class PersonScript : MonoBehaviour
         rb.velocity = moveDirection * moveSpeed;
 
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPosition.z = transform.position.z;  // Match z position to avoid depth issues
+
         Vector3 direction = (mouseWorldPosition - transform.position).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        rb.rotation = angle;
+        transform.up = direction;   // Point the 'up' vector towards the mouse position
     }
 }
