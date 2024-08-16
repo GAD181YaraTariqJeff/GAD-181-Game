@@ -9,6 +9,7 @@ public class FinishLine : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("You got out of the machine WOOO!");
+            Time.timeScale = 0f;
 
         }
     }
