@@ -20,15 +20,14 @@ public class HazardController : MonoBehaviour
     // This method will reset the level when called 
     private void Respawn()
     {
-        playerScript._health -= 1;
+        playerData.playerHealth -= 1; // Use playerHealth instead 
         playerScript.UpdateHealthText();
-
 
         // Reset the player's position
         playerScript.transform.position = playerData.playerPosition;
 
         // Reload the scene only if health is 0
-        if (playerScript._health <= 0)
+        if (playerData.playerHealth <= 0) // Use playerHealth instead
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

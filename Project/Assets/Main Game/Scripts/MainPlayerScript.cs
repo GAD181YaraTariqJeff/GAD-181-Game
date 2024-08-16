@@ -10,8 +10,7 @@ public class MainPlayerScript : MonoBehaviour
     public float speed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
-    public int _health = 3;
-    public TextMeshProUGUI _healthText;
+    public TextMeshProUGUI healthText;
     public TextMeshProUGUI _microgameScoreText; // Reference to the UI Text element
     private Vector3 _startPosition; // Store the starting position
     public PlayerData playerData; // Reference to the PlayerData Scriptable Object
@@ -93,7 +92,7 @@ public class MainPlayerScript : MonoBehaviour
 
     public void UpdateHealthText()
     {
-        _healthText.text = "Health: " + _health.ToString();
+        healthText.text = "Health: " + playerData.playerHealth.ToString(); // Updated to use playerData.playerHealth
     }
 
     public void ResetPosition()
