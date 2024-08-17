@@ -423,6 +423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 162205554}
   scoreText: {fileID: 1260697157}
+  guideText: {fileID: 622694106}
+  displayTime: 3
 --- !u!4 &1091399190
 Transform:
   m_ObjectHideFlags: 0
@@ -680,6 +682,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 162205554}
   scoreText: {fileID: 1260697157}
+  guideText: {fileID: 622694106}
+  displayTime: 3
 --- !u!1 &1873992669
 GameObject:
   m_ObjectHideFlags: 0
