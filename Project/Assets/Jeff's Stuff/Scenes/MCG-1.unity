@@ -200,12 +200,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3371039913772524072, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371039913772524072, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371039913772524072, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03433615
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 3371039913772524072, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3371039913772524072, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -240,12 +248,68 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4863102
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5044796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.011579156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28931335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101880686511168348, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.56
       objectReference: {fileID: 0}
     - target: {fileID: 8083014942301261325, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056935467923022223, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 096ae8cabfda616499ebe6353f6b791d, type: 3}
+    - target: {fileID: 9056935467923022223, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056935467923022223, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9056935467923022223, guid: b0cb7e1b28f0526448495c6a08638cf5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -486,7 +550,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.06642212, g: 0.06847385, b: 0.07169801, a: 0}
+  m_BackGroundColor: {r: 0.2679245, g: 0.2679245, b: 0.2679245, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
