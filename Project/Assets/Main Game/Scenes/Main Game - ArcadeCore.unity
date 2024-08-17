@@ -11265,7 +11265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructionText: {fileID: 1630476930}
-  displayDuration: 50
+  displayDuration: 10
 --- !u!4 &578522547
 Transform:
   m_ObjectHideFlags: 0
