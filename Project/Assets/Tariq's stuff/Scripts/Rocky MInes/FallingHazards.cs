@@ -14,7 +14,7 @@ public class FallingHazards : MonoBehaviour
 
     void Fall()
     {
-        Instantiate(fallingObject, new Vector3(Random.Range(-10, 10), 10, 0), Quaternion.identity);
+        Instantiate(fallingObject, new Vector3(Random.Range(-10, 10), 6, 0), Quaternion.identity);
     }
 
 }
