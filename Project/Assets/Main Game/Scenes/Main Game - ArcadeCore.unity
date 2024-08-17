@@ -27638,7 +27638,7 @@ MonoBehaviour:
   pointA: {fileID: 345835269}
   pointB: {fileID: 214169515}
   speed: 2.5
-  playerData: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 9f9c94c037eed6142afc59776e13cbbd, type: 2}
   playerScript: {fileID: 1939506772}
 --- !u!1001 &1350798806
 PrefabInstance:
