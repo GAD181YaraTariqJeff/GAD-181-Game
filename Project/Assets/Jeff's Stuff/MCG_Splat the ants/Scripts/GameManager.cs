@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 using TMPro; // Add this directive
 
 public class GameManager : MonoBehaviour
@@ -10,12 +11,17 @@ public class GameManager : MonoBehaviour
     private float remaining;
     public TextMeshProUGUI timerText; // Reference to the TextMesh Pro text component
     private int scoreNumber = 0;
+    [SerializeField] private GameObject gameGuideUI; // Reference to the Game Guide UI
+    [SerializeField] private float guideDuration = 3f; // Duration for showing the guide
+
 
     /// <summary>
     /// In the start there will be checks so that we can identify if there are any missing components
     /// </summary>
     void Start()
     {
+        StartCoroutine(ShowGuideAndStartGame()); // Start the guide and game timer sequence
+
         remaining = duration; // Initialize the timer
 
         GameObject antObject = GameObject.Find("Ant");
@@ -95,4 +101,15 @@ public class GameManager : MonoBehaviour
     {
         timerText.text = time.ToString("F2"); // Display time with 2 decimal places
     }
+    // Added the new coroutine for showing the guide and starting the game
+    IEnumerator ShowGuideAndStartGame()
+    {
+        gameGuideUI.SetActive(true); // Show the guide UI
+        Time.timeScale = 0f; // Pause the game
+        yield return new WaitForSecondsRealtime(guideDuration); // Wait for the guide duration
+        gameGuideUI.SetActive(false); // Hide the guide UI
+        Time.timeScale = 1f; // Resume the game
+        remaining = duration; // Initialize the timer after the guide disappears
+    }
+
 }
