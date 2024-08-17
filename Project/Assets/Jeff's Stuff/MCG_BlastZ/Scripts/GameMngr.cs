@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro; 
 
 public class GameMngr : MonoBehaviour
@@ -8,7 +9,10 @@ public class GameMngr : MonoBehaviour
     public int totalTargets = 5;
     public float timeLimit = 10f; // Time limit in seconds
     public TextMeshProUGUI timerText; // TMP component to display the timer
-   // public TextMeshProUGUI targetCountText; // TMP component to display the remaining target count
+                                      // public TextMeshProUGUI targetCountText; // TMP component to display the remaining target count
+
+    public TextMeshProUGUI guideText; // Reference to the guide text UI element
+    public float guideDisplayTime = 3f; // Time in seconds to display the guide before starting the game
 
     private int targetsShot = 0;
     private int targetsRemaining;
@@ -16,16 +20,32 @@ public class GameMngr : MonoBehaviour
 
     void Start()
     {
+        // Start the game with a guide display
+        StartCoroutine(DisplayGuideAndStartGame());
         // Start the timer
         timer = timeLimit;
-        // Initialize targets remaining
+   
+       
+   
+    }
+    IEnumerator DisplayGuideAndStartGame()
+    {
+        // Ensure the guide text is enabled at the start
+        guideText.gameObject.SetActive(true);
+
+        // Wait for the specified display time
+        yield return new WaitForSeconds(guideDisplayTime);
+
+        // Hide the guide text
+        guideText.gameObject.SetActive(false);
+
+        // Initialize game variables
+        timer = timeLimit;
         targetsRemaining = totalTargets;
+
         // Spawn targets
         SpawnTargets();
-        // Update target count display
-       // UpdateTargetCountDisplay();
     }
-
     void Update()
     {
         // Update the timer

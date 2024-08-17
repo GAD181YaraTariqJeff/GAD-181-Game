@@ -6,16 +6,30 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] TMP_Text timerText;
     [SerializeField] TMP_Text scoreText;
-
+    [SerializeField] TMP_Text guideText; // Reference to the guide text UI element
+    [SerializeField] float displayTime = 5f; // Time in seconds to display the guide before starting the game
     private float gameTime = 15f;
     private int score = 0;
 
     void Start()
     {
-        StartCoroutine(GameTimer());
-        UpdateScoreText();
+        StartCoroutine(DisplayGuideAndStartGame());
+    
     }
 
+    IEnumerator DisplayGuideAndStartGame()
+    {
+        // Ensure the guide text is enabled at the start
+        guideText.gameObject.SetActive(true);
+
+        // Wait for the specified display time
+        yield return new WaitForSeconds(displayTime);
+
+        // Hide the guide text and start the microgame
+        guideText.gameObject.SetActive(false);
+        StartCoroutine(GameTimer()); // Start the game timer
+        UpdateScoreText(); // Update the score display
+    }
     IEnumerator GameTimer()
     {
         while (gameTime > 0)
