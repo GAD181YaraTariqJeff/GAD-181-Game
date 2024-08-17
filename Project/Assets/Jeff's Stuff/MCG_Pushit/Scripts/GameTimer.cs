@@ -1,19 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    public float gameDuration = 5f; // Duration of the game in seconds
+    public float gameDuration = 10f; // Duration of the game in seconds
     private float remainingTime;
     public TextMeshProUGUI timerText; // Reference to the TextMesh Pro text component
-    public GameObject loseTextObject; // Reference to the lose text object
+    public TextMeshProUGUI guideText; // Reference to the guide text UI element
+    public float guideDisplayTime = 3f; // Time in seconds to display the guide before starting the game
 
     void Start()
     {
+        guideText.gameObject.SetActive(true); // Show the guide text
+       
+        StartCoroutine(DisplayGuideAndStartTimer()); // Start coroutine to handle guide and timer
+    }
+
+    IEnumerator DisplayGuideAndStartTimer()
+    {
+        // Wait for the specified display time
+        yield return new WaitForSeconds(guideDisplayTime);
+
+        // Hide the guide text
+        guideText.gameObject.SetActive(false);
+
+        // Initialize timer
         remainingTime = gameDuration;
-        loseTextObject.SetActive(false); // Hide the lose message at the start
     }
 
     void Update()
@@ -29,8 +42,7 @@ public class GameTimer : MonoBehaviour
         }
         else
         {
-            loseTextObject.SetActive(true); // Show the lose message
-            Time.timeScale = 0; // Pause the game
+            Time.timeScale = 1; // Pause the game
         }
     }
 
