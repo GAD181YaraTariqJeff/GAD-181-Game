@@ -580,8 +580,10 @@ MonoBehaviour:
   - {fileID: 1432980065}
   - {fileID: 1967663776}
   - {fileID: 216740640}
-  gameTime: 9
+  gameTime: 13
   gameText: {fileID: 782060743}
+  guideUI: {fileID: 1786846628}
+  guideDuration: 3
 --- !u!1 &1432980063
 GameObject:
   m_ObjectHideFlags: 0

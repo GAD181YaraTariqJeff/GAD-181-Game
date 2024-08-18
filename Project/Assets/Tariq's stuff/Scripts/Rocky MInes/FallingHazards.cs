@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingHazards : MonoBehaviour
 {
-    float wait = 0.1f;
+    float wait = .5f;
     public GameObject fallingObject;
 
     void Start()
