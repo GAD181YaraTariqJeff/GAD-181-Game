@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class FinishLine : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("You got out of the machine WOOO!");
-            Time.timeScale = 0f;
+            SceneManager.LoadScene("Main Menu");
 
         }
     }
